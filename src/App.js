@@ -1,19 +1,21 @@
 import React from 'react';
 import './App.css';
 import Youtube from './Youtube';
-import RandomVidz from './Playlists/RandomVidz'
+// import RandomVidz from './Playlists/RandomVidz'
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Media from 'react-bootstrap/Media';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import TevinPlaylists from './Playlists/Tevin';
 
 
 
 
+const App = props => {
 
-function App() {
+
   return (
     <div className="App">
       <Navbar bg="light" expand="lg">
@@ -43,7 +45,7 @@ function App() {
   <Media >
   
   <Media.Body>
-    <Youtube/>
+    <TevinPlaylists/>
     
   </Media.Body>
 

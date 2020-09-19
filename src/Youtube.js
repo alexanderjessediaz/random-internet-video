@@ -52,8 +52,6 @@ class Youtube extends Component {
             videos:this.shufflePlaylist(randomPlaylist,randomPlaylistTotal)
         })
     }
-
-
     render(){
         
         return(
