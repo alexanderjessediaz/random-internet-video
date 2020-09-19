@@ -1,13 +1,7 @@
 import React, {Component} from 'react';
 import Button from 'react-bootstrap/Button'
-// import Tevin from './Playlists/Tevin'
 
-// const tevinVids = <Tevin
-
-// const tevinPlaylist = `https://www.youtube.com/embed/watch?v=996TyFiZx_0&list=PLxpr798LbTOLnya9JNEuwzPQ2qFP8ejBZ&index=1`
-// const tevinPLTotalNumber = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23]
-
-// const randomInternetPlaylist = 'http://youtube.com/watch?v=0KKMUxn8FZI&list=PLMyztl9rKFp9ZztVDCso2eZHkluQJBLrj&index=1'
+// Tevin
 
 const tevinPlaylist = `https://www.youtube.com/embed/watch?v=996TyFiZx_0&list=PLxpr798LbTOLnya9JNEuwzPQ2qFP8ejBZ&index=1`
     
@@ -15,6 +9,19 @@ let tevinPlaylistTotal = new Array(23)
     for (let i=0;i<23;i++){
         tevinPlaylistTotal[i] = i + 1
     }
+
+
+// Random InternetVidz
+
+let randomPlaylistTotal = new Array(201)
+        for (let i=0;i<201;i++){
+            randomPlaylistTotal[i] = i + 1
+        }
+
+
+
+const randomPlaylist = 'https://youtube.com/embed/watch?v=0KKMUxn8FZI&list=PLMyztl9rKFp9ZztVDCso2eZHkluQJBLrj&index=1'
+
 
 class Youtube extends Component {
     
@@ -33,13 +40,20 @@ class Youtube extends Component {
         return randomVideo
     }
     
-    handleClick = () => {
+    tevinClick = () => {
         
         this.setState({
             videos:this.shufflePlaylist(tevinPlaylist,tevinPlaylistTotal)
         })
-        
     }
+    randomClick = () => {
+        
+        this.setState({
+            videos:this.shufflePlaylist(randomPlaylist,randomPlaylistTotal)
+        })
+    }
+
+
     render(){
         
         return(
@@ -49,7 +63,8 @@ class Youtube extends Component {
                     frameBorder="0"  
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen></iframe>
-                    <Button onClick={this.handleClick}>Random</Button>
+                    <Button onClick={this.tevinClick}>Random Tevin</Button>
+                    <Button onClick={this.randomClick}>Random Internet Vidz</Button>
             </div>
         )
     }

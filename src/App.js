@@ -44,7 +44,7 @@ function App() {
   
   <Media.Body>
     <Youtube/>
-    <RandomVidz/>
+    
   </Media.Body>
 
 </Media>
