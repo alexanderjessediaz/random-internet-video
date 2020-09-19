@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Youtube from './Youtube';
+import RandomVidz from './Playlists/RandomVidz'
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Media from 'react-bootstrap/Media';
@@ -40,10 +41,12 @@ function App() {
   <Row>
   <Col > 
   <Media >
-  <Youtube/>
+  
   <Media.Body>
-    
+    <Youtube/>
+    <RandomVidz/>
   </Media.Body>
+
 </Media>
 </Col>
 </Row>
