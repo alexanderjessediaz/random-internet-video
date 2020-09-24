@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
+import Message from './Message'
 import '../Styling/MessageList.css'
+
 
 
 class MessageList extends Component {
@@ -17,12 +19,7 @@ class MessageList extends Component {
         return(
             <div className="MessageList">
                 {this.props.messages.map((message,i)=>(
-                    <div>
-                        {message.author && (
-                            <span className="author">{message.author}</span>
-                        )}
-                        {message.body}
-                    </div>
+                    <Message key={i} {...message}/>
                 ))}
             </div>
             
