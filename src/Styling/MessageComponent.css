@@ -7,10 +7,18 @@
     font-size: 13px;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
 }
 
 .MessageComponent .MessageList {
     box-sizing: border-box;
     flex: 1;
+}
+
+.MessageComponent .MessageForm{
+    background: #eee;
+    border-top: 1px solid #ccc;
+    border-radius: 0 0 3px 3px;
+    box-sizing: border-box;
+    flex: 0 0 30px;
 }
