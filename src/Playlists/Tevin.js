@@ -25,7 +25,7 @@ function TevinPlaylists(){
     return (
         <div>
             <iframe 
-                title="random" width="560" height="315" src={video}
+                title="random" width="800" height="400" src={video}
                 frameBorder="0"  
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen>

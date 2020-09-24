@@ -1,0 +1,19 @@
+
+
+#main-container {
+  display: flex;
+  justify-content: center;
+}
+
+#chat-container {
+  display: flex;
+  justify-content: center;
+}
+
+.Tevin{
+  border:3px white dashed;
+  margin-top: 20px;
+  display: flex;
+}
+
+

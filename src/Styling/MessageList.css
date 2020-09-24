@@ -1,0 +1,4 @@
+.MessageComponent .MessageList {
+    box-sizing: border-box;
+    flex: 1;
+}

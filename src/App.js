@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
-import './App.css';
+import './Styling/App.css'
+import './Styling/MessageComponent.css'
+import './Styling/MessageList.css'
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Media from 'react-bootstrap/Media';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import Col from 'react-bootstrap/Col'
 import TevinPlaylists from './Playlists/Tevin';
-// import axios from 'axios';
-import Dashboard from './Dashboard'
+import MessageComponent from './Components/MessageComponent';
+
+
 
 
 
@@ -32,21 +35,19 @@ class App extends Component {
             <Nav.Item>
               <Nav.Link eventKey="link-1">Category 1</Nav.Link>
             </Nav.Item>
-            <Nav.Item>
-              <Dashboard/>
-            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      <Container fluid id="video-container">
+      <Container fluid id="main-container">
         <Row>
-          <Col > 
-            <Media >
+          <Col>
+            <Media>
               <Media.Body>
                 <TevinPlaylists/>
               </Media.Body>
             </Media>
           </Col>
+          <Col><MessageComponent/></Col>
         </Row>
       </Container>
     </div>
