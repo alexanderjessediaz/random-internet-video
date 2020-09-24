@@ -1,4 +1,4 @@
-.MessageComponent .MessageList {
-    box-sizing: border-box;
-    flex: 1;
+ .MessageList {
+    overflow: auto;
+    padding: 4px;
 }
