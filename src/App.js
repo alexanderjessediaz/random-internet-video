@@ -8,7 +8,8 @@ import Media from 'react-bootstrap/Media';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'
-import TevinPlaylists from './Playlists/Tevin';
+// import TevinPlaylists from './Playlists/TevinPlaylists';
+import RandomInternetVideos from './Playlists/RandomInternetVideos';
 import MessageComponent from './Components/MessageComponent';
 
 
@@ -42,7 +43,7 @@ class App extends Component {
           <Col>
             <Media>
               <Media.Body>
-                <TevinPlaylists/>
+                <RandomInternetVideos/>
               </Media.Body>
             </Media>
           </Col>
