@@ -10,8 +10,6 @@ const RandomInternetVideos = () => {
         return randomPlaylistTotal
     }
 
-
-        
     function randomize(){
         let numOfVideosInPlaylist = makePlaylistArray().length
         let initialVideo = 'https://youtube.com/embed/v=0KKMUxn8FZI&list=PLMyztl9rKFp9ZztVDCso2eZHkluQJBLrj&index=1'
@@ -24,7 +22,7 @@ const RandomInternetVideos = () => {
         return (
             <div>
             <iframe 
-                title="random" width="800" height="400" src={video}
+                title="random" width="950" height="400" src={video}
                 frameBorder="0"  
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen>

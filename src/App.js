@@ -7,7 +7,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import Media from 'react-bootstrap/Media';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col'
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button'
 // import TevinPlaylists from './Playlists/TevinPlaylists';
 import RandomInternetVideos from './Playlists/RandomInternetVideos';
 import MessageComponent from './Components/MessageComponent';
@@ -50,6 +51,16 @@ class App extends Component {
           <Col><MessageComponent/></Col>
         </Row>
       </Container>
+      <Container id="channel-btn-container">
+        <Row fluid id="btn-row">
+          <Button>Chat Channel #1</Button>
+          <Button>Chat Channel #2</Button>
+          <Button>Chat Channel #3</Button>
+          <Button>Chat Channel #4</Button>
+          <Button>Chat Channel #5</Button>
+        </Row>
+      </Container>
+ 
     </div>
     );
   }
